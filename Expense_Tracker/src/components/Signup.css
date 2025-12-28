@@ -1,0 +1,290 @@
+/* ================= GLOBAL LAYOUT ================= */
+.auth-wrapper {
+    background-color: #06110b;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ================= NAVBAR ================= */
+.auth-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+}
+
+.brand-logo {
+    color: #00ff73;
+    font-size: 22px;
+}
+
+.contact-support {
+    background: #111d15;
+    border: 1px solid #1a281f;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ================= MAIN CONTAINER ================= */
+.auth-main {
+    display: flex;
+    flex: 1;
+    max-width: 1150px;
+    margin: 0 auto;
+    width: 100%;
+    gap: 40px;
+    align-items: center;
+}
+
+/* ================= LEFT FORM ================= */
+.auth-form-container {
+    width: 100%;
+    max-width: 460px;
+}
+
+.form-header h1 {
+    font-size: 2.4rem;
+    margin-bottom: 6px;
+}
+
+.form-header p {
+    color: #8b9a91;
+    margin-bottom: 22px;
+}
+
+.input-group {
+    margin-bottom: 16px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.85rem;
+    color: #8b9a91;
+}
+
+.input-box {
+    background: #0c1611;
+    border: 1px solid #1a281f;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.input-box input {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 12px 8px;
+    width: 100%;
+    outline: none;
+}
+
+.input-icon {
+    color: #8b9a91;
+}
+
+.password-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #8b9a91;
+}
+
+/* ================= BUTTONS ================= */
+.main-submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: #00ff73;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.main-submit-btn:hover {
+    opacity: 0.9;
+}
+
+.form-divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.form-divider::before {
+    content: "";
+    position: absolute;
+    inset: 50% 0 auto 0;
+    height: 1px;
+    background: #1a281f;
+}
+
+.form-divider span {
+    position: relative;
+    padding: 0 10px;
+    background: #06110b;
+    color: #8b9a91;
+    font-size: 0.8rem;
+}
+
+.social-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.social-provider-btn {
+    background: transparent;
+    border: 1px solid #1a281f;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.footer-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #8b9a91;
+    font-size: 0.9rem;
+}
+
+.footer-link a {
+    color: #00ff73;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* ================= RIGHT VISUAL CARD ================= */
+.auth-visual-container {
+    width: 420px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 28px;
+    padding: 36px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1.5px, transparent 1.5px);
+    background-size: 30px 30px;
+}
+
+.glass-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction {
+    background: #111d15;
+    border-radius: 14px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.transaction .icon-circle {
+    color: #00ff73;
+}
+
+.transaction.expense .icon-circle {
+    color: #f4a261;
+}
+
+.skeleton-lines {
+    flex: 1;
+}
+
+.line-lg {
+    height: 6px;
+    width: 80px;
+    background: #1a2a21;
+    border-radius: 3px;
+    margin-bottom: 6px;
+}
+
+.line-sm {
+    height: 6px;
+    width: 40px;
+    background: #1a2a21;
+    border-radius: 3px;
+}
+
+.price {
+    font-weight: 700;
+}
+
+.card-info {
+    margin-top: 30px;
+}
+
+.card-info h2 {
+    font-size: 1.8rem;
+}
+
+.card-info p {
+    color: #8b9a91;
+    font-size: 0.9rem;
+    margin-top: 6px;
+}
+
+.carousel-dots {
+    display: flex;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.dot {
+    flex: 1;
+    height: 4px;
+    background: #1a281f;
+    border-radius: 2px;
+}
+
+.dot.active {
+    background: #00ff73;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .auth-main {
+        flex-direction: column;
+    }
+
+    .auth-visual-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-wrapper {
+        padding: 20px;
+    }
+
+    .auth-visual-container {
+        display: none;
+    }
+}

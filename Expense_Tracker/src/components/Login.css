@@ -1,0 +1,273 @@
+/* ================= CORE LAYOUT ================= */
+.auth-viewport {
+    background-color: #06110b;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.auth-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.brand-identity {
+    display: flex;
+    gap: 8px;
+    font-weight: 700;
+    align-items: center;
+}
+
+.sparkle {
+    color: #00ff73;
+    font-size: 20px;
+}
+
+.support-btn {
+    background: #111d15;
+    border: 1px solid #1a281f;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ================= MAIN CONTAINER ================= */
+.auth-flex-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1150px;
+    margin: 0 auto;
+    width: 100%;
+    gap: 40px;
+}
+
+/* ================= LEFT FORM ================= */
+.form-section {
+    width: 100%;
+    max-width: 460px;
+}
+
+.header-text h1 {
+    font-size: 2.4rem;
+    margin-bottom: 6px;
+}
+
+.header-text p {
+    color: #8b9a91;
+    margin-bottom: 22px;
+}
+
+.input-group {
+    margin-bottom: 14px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.85rem;
+    color: #8b9a91;
+}
+
+.field-wrapper {
+    background: #0c1611;
+    border: 1px solid #1a281f;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.field-wrapper input {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 12px 8px;
+    width: 100%;
+    outline: none;
+}
+
+.utility-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin: 14px 0;
+}
+
+.utility-links a {
+    color: #00ff73;
+    text-decoration: none;
+}
+
+.btn-sign-in {
+    width: 100%;
+    padding: 14px;
+    background: #00ff73;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-sign-in:hover {
+    opacity: 0.9;
+}
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    inset: 50% 0 auto 0;
+    height: 1px;
+    background: #1a281f;
+}
+
+.divider span {
+    background: #06110b;
+    padding: 0 10px;
+    position: relative;
+    color: #8b9a91;
+    font-size: 0.75rem;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.social-btn {
+    background: transparent;
+    border: 1px solid #1a281f;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* ================= RIGHT VISUAL CARD ================= */
+.visual-section {
+    width: 420px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 28px;
+    padding: 36px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1.5px, transparent 1.5px);
+    background-size: 30px 30px;
+}
+
+.trans-item {
+    background: #111d15;
+    border-radius: 14px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.green .icon {
+    color: #00ff73;
+}
+
+.orange .icon {
+    color: #f4a261;
+}
+
+.l1,
+.l2 {
+    height: 6px;
+    background: #1a2a21;
+    border-radius: 4px;
+}
+
+.l1 { width: 80px; }
+.l2 { width: 40px; }
+
+.amt {
+    margin-left: auto;
+    font-weight: 700;
+}
+
+.green .amt {
+    color: #00ff73;
+}
+
+.feature-info h2 {
+    margin-top: 30px;
+    font-size: 1.8rem;
+}
+
+.feature-info p {
+    color: #8b9a91;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.pagination {
+    display: flex;
+    gap: 8px;
+    margin-top: 30px;
+}
+
+.dot {
+    flex: 1;
+    height: 4px;
+    background: #1a281f;
+    border-radius: 2px;
+}
+
+.dot.active {
+    background: #00ff73;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .auth-flex-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .visual-section {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .form-section {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-viewport {
+        padding: 20px;
+    }
+
+    .header-text h1 {
+        font-size: 2rem;
+    }
+
+    .visual-section {
+        display: none;
+    }
+}
